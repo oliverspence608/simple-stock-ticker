@@ -1,9 +1,12 @@
 <?php
 /**
- * Plugin Name: Simple Stock Tickers
- * Description: Banner (text, hourly refresh) + TradingView card/details. Shortcodes: [stock_ticker_banner], [stock_ticker_card], [stock_ticker_details]
- * Version: 2.0.0
- * Author: Oliver & Spence Dev Team
+ * Plugin Name: Simple Stock Ticker
+ * Plugin URI:  https://github.com/oliverspence608/simple-stock-ticker
+ * Description: A lightweight WordPress plugin to display real-time stock ticker data.
+ * Version:     1.0.0
+ * Author:      Oliver & Spence Dev Team
+ * Author URI:  https://github.com/oliverspence608
+ * License:     GPL2
  */
 
 if (!defined('ABSPATH')) exit;
@@ -470,6 +473,7 @@ add_filter('plugin_action_links_' . plugin_basename(__FILE__), function($links){
     $links[] = '<a href="' . admin_url('options-general.php?page=sst-settings') . '">Settings</a>';
     return $links;
 });
+
 
 
 
